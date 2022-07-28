@@ -1,6 +1,6 @@
 from tkinter import *
 from busca import Busca_tweet
-from analise import Teste
+
 
 
 class Application:
