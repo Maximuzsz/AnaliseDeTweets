@@ -31,11 +31,11 @@ class Busca_tweet:
 
 
         #base de dados de cada dia
-        dia1= open('C:\\Users\\Maximuz\\Documents\\dia1.txt', 'w')
-        dia2= open('C:\\Users\\Maximuz\\Documents\\dia2.txt', 'w')
-        dia3= open('C:\\Users\\Maximuz\\Documents\\dia3.txt', 'w')
-        dia4= open('C:\\Users\\Maximuz\\Documents\\dia4.txt', 'w')
-        dia5= open('C:\\Users\\Maximuz\\Documents\\dia5.txt', 'w')
+        dia1= open('C:\\Users\\Arklok\\Documents\\dia1.txt', 'w')
+        dia2= open('C:\\Users\\Arklok\\Documents\\dia2.txt', 'w')
+        dia3= open('C:\\Users\\Arklok\\Documents\\dia3.txt', 'w')
+        dia4= open('C:\\Users\\Arklok\\Documents\\dia4.txt', 'w')
+        dia5= open('C:\\Users\\Arklok\\Documents\\dia5.txt', 'w')
 
 
 
@@ -47,7 +47,7 @@ class Busca_tweet:
                palavraSemAcento = u"".join([c for c in nfkd if not unicodedata.combining(c)])
 
                # Usa expressão regular para retornar a palavra apenas com números, letras e espaço
-               te =re.sub('[^a-zA-Z0-9 \\\]', '', palavraSemAcento)
+               te =palavraSemAcento#re.sub('[^a-zA-Z0-9 \\\]', '', palavraSemAcento)
                
                print(tweet.created_at)
                #condicional que verifica o dia do tweet e o adciona na base do seu respectivo dia

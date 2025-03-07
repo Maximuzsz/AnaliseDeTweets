@@ -11,7 +11,7 @@ def analisar_frase(classificador, vetorizador, frase):
         return frase, classificador.predict(vetorizador.transform([frase]))
 
 def obter_dados_das_fontes():
-        diretorio_base = 'C:\\Users\\Maximuz\\Documents\\treino.txt'
+        diretorio_base = 'C:\\Users\\Arklok\\Documents\\treino.txt'
 
         with open(diretorio_base , "r") as arquivo_texto:
             dados = arquivo_texto.read().split('\n')
@@ -109,11 +109,11 @@ class Teste:
         dia5_positivo = dia5_negativo = 0
 
         # abre a base de dados de cada dia
-        dia1= open('C:\\Users\\Maximuz\\Documents\\dia1.txt', 'r')
-        dia2= open('C:\\Users\\Maximuz\\Documents\\dia2.txt', 'r')
-        dia3= open('C:\\Users\\Maximuz\\Documents\\dia3.txt', 'r')
-        dia4= open('C:\\Users\\Maximuz\\Documents\\dia4.txt', 'r')
-        dia5= open('C:\\Users\\Maximuz\\Documents\\dia5.txt', 'r')
+        dia1= open('C:\\Users\\Arklok\\Documents\\dia1.txt', 'r')
+        dia2= open('C:\\Users\\Arklok\\Documents\\dia2.txt', 'r')
+        dia3= open('C:\\Users\\Arklok\\Documents\\dia3.txt', 'r')
+        dia4= open('C:\\Users\\Arklok\\Documents\\dia4.txt', 'r')
+        dia5= open('C:\\Users\\Arklok\\Documents\\dia5.txt', 'r')
 
         #lê cada base de dados e conta o resultado da análise
         for linha in dia1:
